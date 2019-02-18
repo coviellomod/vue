@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@media screen and (max-width: 800px) {
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: 0.5!important;
+    }
+    .slick-current {
+        opacity: 1!important;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.slider {
+    margin: 10px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slick-dots li button::before {
+    color: #e3e3e3;
+    opacity: 1
+}
+
+.slick-dots li.slick-active button::before {
+    color: #2252e7 !important;
+    opacity: 1!important;
+}
+
+.my-slide {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.my-slide img {
+    border-radius: 5px;
+}
+
+.details {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.profile-img {
+    width: 30px!important;
+    height: 30px;
+    border-radius: 50%!important;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.5rem;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.name,
+.location {
+    color: #fff;
+    font-size: 0.6em;
+    margin-left: 50px;
+}
+
+.location {
+    opacity: .8;
+    margin-top: -0.8em;
+}
+
+.rate {
+    color: #fff;
+    font-size: 1.6em;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.5rem;
+    font-weight: 700;
+}
+
+.caption {
+    position: absolute;
+    bottom: -20%;
+    left: 5%;
+    width: 90%;
+    padding: 0 30px;
+    font-size: 0.6em;
+    background: #fff;
+    color: #676767;
+    z-index: 9999;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px #bababa;
+}

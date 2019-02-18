@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Progetto Test</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> </head>
+
+<body>
+    <h1 style="padding: 0 1.6em">Destinations</h1>
+    <section class="regular slider">
+        <div class="my-slide"> <img src="img/pexels-photo-1029011.jpeg">
+            <div class="details"> <img class="profile-img" src="img/pexels-photo-91224.jpeg">
+                <p class="name">Profile Name<span class="rate">4.7</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Location</p>
+            </div>
+            <div class="caption">
+                <h3>Mediterranean</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="my-slide"> <img src="img/pexels-photo-462152.jpeg">
+            <div class="details"> <img class="profile-img" src="img/pexels-photo-91224.jpeg">
+                <p class="name">Profile Name<span class="rate">4.7</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Location</p>
+            </div>
+            <div class="caption">
+                <h3>Mediterranean</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="my-slide"> <img src="img/pexels-photo-289319.jpeg">
+            <div class="details"> <img class="profile-img" src="img/pexels-photo-91224.jpeg">
+                <p class="name">Profile Name<span class="rate">4.7</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Location</p>
+            </div>
+            <div class="caption">
+                <h3>Mediterranean</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="my-slide"> <img src="img/santorini-oia-greece-travel-163864.jpeg">
+            <div class="details"> <img class="profile-img" src="img/pexels-photo-91224.jpeg">
+                <p class="name">Profile Name<span class="rate">4.7</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Location</p>
+            </div>
+            <div class="caption">
+                <h3>Mediterranean</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="my-slide"> <img src="img/pexels-photo-219998.jpeg">
+            <div class="details"> <img class="profile-img" src="img/pexels-photo-91224.jpeg">
+                <p class="name">Profile Name<span class="rate">4.7</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Location</p>
+            </div>
+            <div class="caption">
+                <h3>Mediterranean</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: false
+                , infinite: false
+                , slidesToShow: 5
+                , swipe: true
+                , centerMode: false
+                , centerPadding: '60px'
+                , responsive: [
+                    {
+                        breakpoint: 768
+                        , settings: {
+                            arrows: false
+                            , dots: true
+                            , centerMode: true
+                            , centerPadding: '40px'
+                            , slidesToShow: 1
+                            , swipe: true
+                        }
+    }
+                    , {
+                        breakpoint: 480
+                        , settings: {
+                            arrows: false
+                            , dots: true
+                            , centerMode: true
+                            , centerPadding: '40px'
+                            , slidesToShow: 1
+                            , swipe: true
+                        , }
+                                }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
